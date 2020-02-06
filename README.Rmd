@@ -14,9 +14,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wei_lda_debate
+# dynamic_topic_modeling
 
 <!-- badges: start -->
+[![PyPI version](https://badge.fury.io/py/dynamic-topic-modeling.svg)](https://badge.fury.io/py/dynamic-topic-modeling)
 <!-- badges: end -->
 
 The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation models based on 'sklearn' and 'gensim' framework, and Dynamic Topic Model[@Blei2006Dynamic] based on 'gensim' framework.
