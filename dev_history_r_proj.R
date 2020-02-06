@@ -93,10 +93,31 @@ git2r::push(name = 'origin', refspec = "refs/heads/master",
             )
 
 
+# delete object -----------------------------------------------------------
+
+rm("author_info")
+rm("desc_lines")
 
 # update template ---------------------------------------------------------
 
 library(fs)
 file_copy("dev_history_r_proj.R", "../dev_history/refs/dev_history_r_proj.R",
           overwrite = TRUE)
-# open it!
+repo <-  git2r::repository("../dev_history/")
+repo %>% git2r::status()
+repo %>% git2r::add(path = ".")
+repo %>% git2r::status()
+repo %>% git2r::commit(message = "Update r proj dev history.")
+repo %>% git2r::push(name = 'origin', refspec = "refs/heads/master", cred = git2r::cred_token())
+rm("repo")
+
+
+# update local ------------------------------------------------------------
+
+git2r::status()
+git2r::add(path = ".")
+git2r::status()
+git2r::commit(message = "Update r proj dev history.")
+git2r::push(name = 'origin', refspec = "refs/heads/master", cred = git2r::cred_token())
+rm("repo")
+
