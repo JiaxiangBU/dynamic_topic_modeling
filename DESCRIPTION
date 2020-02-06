@@ -1,0 +1,14 @@
+Package: dynamic_topic_modeling
+Version: 0.0.0.9000
+Title: What the Package Does (One Line, Title Case)
+Description: What the package does (one paragraph).
+Authors@R:
+    person(given = "Jiaxiang",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "alex.lijiaxiang@foxmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
