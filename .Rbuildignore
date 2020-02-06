@@ -2,3 +2,5 @@
 ^LICENSE\.md$
 ^Makefile$
 ^README\.Rmd$
+^.*\.Rproj$
+^\.Rproj\.user$
