@@ -119,5 +119,3 @@ git2r::add(path = ".")
 git2r::status()
 git2r::commit(message = "Update r proj dev history.")
 git2r::push(name = 'origin', refspec = "refs/heads/master", cred = git2r::cred_token())
-rm("repo")
-
