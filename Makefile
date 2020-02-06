@@ -3,7 +3,7 @@ README:
 
 index:
 
-	RScript -e "rmarkdown::render('../imp_rmd/update_index_content.Rmd')"
+	RScript ../imp_rmd/update_index_content.R
 	notedown index.md  > index.ipynb
 	cp README-tmp.md README.md
 	rm README-tmp.md
