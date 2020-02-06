@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: ../learn_nlp/refs/add.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -18,8 +19,18 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation models based on 'sklearn' and 'gensim' framework, and Dynamic Topic Model based on 'gensim' framework.
+The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation models based on 'sklearn' and 'gensim' framework, and Dynamic Topic Model[@Blei2006Dynamic] based on 'gensim' framework.
 I decide to build a Python package, so this reposority will be updated.
 The new reposority path is <https://github.com/JiaxiangBU/dynamic_topic_modeling.git>.
 
-`r add2pkg::add_disclaimer("Jiaxiang Li")`
+# Examples
+
+1. [LDA based on sklearn]
+1. [LDA based on gensim]
+1. [Dynamic Topic Modeling]
+
+[LDA based on sklearn]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb
+[LDA based on gensim]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb
+[Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb
+
+`r add2pkg::add_disclaimer("Jiaxiang Li and Shuyi Wang", license_name = "Apache License")`
