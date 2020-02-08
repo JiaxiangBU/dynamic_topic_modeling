@@ -1,13 +1,16 @@
-Package: dynamic_topic_modeling
-Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
+Package: dynamic.topic.modeling
+Version: 1.0.2
+Title: Run Dynamic Topic Modeling
 Description: What the package does (one paragraph).
 Authors@R:
-    person(given = "Jiaxiang",
-           family = "Li",
-           role = c("aut", "cre"),
-           email = "alex.lijiaxiang@foxmail.com",
-           comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
+    c(person(given = "Jiaxiang",
+             family = "Li",
+             role = c("aut", "cre"),
+             email = "alex.lijiaxiang@foxmail.com",
+             comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492")),
+      person(given = "Shuyi",
+             family = "Wang",
+             role = "aut"))
 License: Apache License (>= 2.0)
 Encoding: UTF-8
 LazyData: true
