@@ -34,4 +34,4 @@ The new reposority path is <https://github.com/JiaxiangBU/dynamic_topic_modeling
 [LDA based on gensim]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb
 [Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb
 
-`r add2pkg::add_disclaimer("Jiaxiang Li and Shuyi Wang", license_name = "Apache License")`
+`r add2pkg::add_disclaimer("Jiaxiang Li;Shuyi Wang;Svitlana Galeshchuk", license_name = "Apache License")`

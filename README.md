@@ -48,8 +48,8 @@ contributing to this project, you agree to abide by its terms.
 
 <h6 align="center">
 
-Apache License © [Jiaxiang Li and Shuyi
-Wang](https://github.com/JiaxiangBU/dynamic_topic_modeling/blob/master/LICENSE.md)
+Apache License © [Jiaxiang Li;Shuyi Wang;Svitlana
+Galeshchuk](https://github.com/JiaxiangBU/dynamic_topic_modeling/blob/master/LICENSE.md)
 
 </h6>
 
