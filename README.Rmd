@@ -29,7 +29,8 @@ The new reposority path is <https://github.com/JiaxiangBU/dynamic_topic_modeling
 To build this package, I borrow from 
 
 1. 'wei_lda_debate'[@Shuyi_Wang2018] to build LDA framework
-1. 'dtmvisual'[@Svitlana_2019] to build the visualization framework
+1. 'dtmvisual'[@Svitlana_2019] to build the visualization framework.
+Moreover, this package seems like a visualiztaion tutorial using jupyter notebook for 'dtmvisual'.
 
 ## Examples
 
