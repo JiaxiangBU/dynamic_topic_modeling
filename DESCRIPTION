@@ -1,5 +1,5 @@
 Package: dynamic.topic.modeling
-Version: 1.0.2
+Version: 1.1.0
 Title: Run Dynamic Topic Modeling
 Description: What the package does (one paragraph).
 Authors@R:
@@ -10,6 +10,9 @@ Authors@R:
              comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492")),
       person(given = "Shuyi",
              family = "Wang",
+             role = "aut"),
+      person(given = "Svitlana",
+             family = "Galeshchuk",
              role = "aut"))
 License: Apache License (>= 2.0)
 Encoding: UTF-8
