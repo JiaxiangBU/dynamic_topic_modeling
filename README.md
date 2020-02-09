@@ -11,6 +11,7 @@
 
 [![PyPI
 version](https://badge.fury.io/py/dynamic-topic-modeling.svg)](https://badge.fury.io/py/dynamic-topic-modeling)
+[![DOI](https://zenodo.org/badge/238671296.svg)](https://zenodo.org/badge/latestdoi/238671296)
 <!-- badges: end -->
 
 The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation
@@ -35,6 +36,31 @@ To build this package, I borrow from
     Modeling](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb)
 
 
+Jiaxiang Li. (2020, February 9). JiaxiangBU/dynamic_topic_modeling:
+dynamic_topic_modeling 1.1.0 (Version v1.1.0). Zenodo.
+<http://doi.org/10.5281/zenodo.3660401>
+
+``` bibtex
+@software{jiaxiang_li_2020_3660401,
+  author       = {Jiaxiang Li},
+  title        = {{JiaxiangBU/dynamic_topic_modeling: 
+                   dynamic_topic_modeling 1.1.0}},
+  month        = feb,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v1.1.0},
+  doi          = {10.5281/zenodo.3660401},
+  url          = {https://doi.org/10.5281/zenodo.3660401}
+}
+```
+
+If you use dynamic_topic_modeling, I would be very grateful if you can
+add a citation in your published work. By citing
+dynamic_topic_modeling, beyond acknowledging the work, you contribute
+to make it more visible and guarantee its growing and sustainability.
+For citation, please use the BibTex or the citation content.
+
+
 ## Install
 
 `pip install dynamic_topic_modeling`
@@ -48,6 +74,31 @@ To build this package, I borrow from
     gensim](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb)
 3.  [Dynamic Topic
     Modeling](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb)
+
+
+Jiaxiang Li. (2020, February 9). JiaxiangBU/dynamic\_topic\_modeling:
+dynamic\_topic\_modeling 1.1.0 (Version v1.1.0). Zenodo.
+<http://doi.org/10.5281/zenodo.3660401>
+
+``` bibtex
+@software{jiaxiang_li_2020_3660401,
+  author       = {Jiaxiang Li},
+  title        = {{JiaxiangBU/dynamic\_topic\_modeling: 
+                   dynamic\_topic\_modeling 1.1.0}},
+  month        = feb,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v1.1.0},
+  doi          = {10.5281/zenodo.3660401},
+  url          = {https://doi.org/10.5281/zenodo.3660401}
+}
+```
+
+If you use dynamic\_topic\_modeling, I would be very grateful if you can
+add a citation in your published work. By citing
+dynamic\_topic\_modeling, beyond acknowledging the work, you contribute
+to make it more visible and guarantee its growing and sustainability.
+For citation, please use the BibTex or the citation content.
 
 
 <h4 align="center">

@@ -605,16 +605,35 @@ body {
 <h1 id="dynamic_topic_modeling">dynamic_topic_modeling</h1>
 <!-- badges: start -->
 
-<p><a href="https://badge.fury.io/py/dynamic-topic-modeling"><img src="data:image/svg+xml;base64,CjxzdmcgY29udGVudFNjcmlwdFR5cGU9InRleHQvZWNtYXNjcmlwdCIgd2lkdGg9IjEyNSIKICAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgem9vbUFuZFBhbj0ibWFnbmlmeSIKICAgICBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIKICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCI+CgoKICAgIDxsaW5lYXJHcmFkaWVudCB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeDI9IjAiIHkyPSIxMDAlIgogICAgICAgICAgICAgICAgICAgIHhsaW5rOnR5cGU9InNpbXBsZSIgeGxpbms6YWN0dWF0ZT0ib25Mb2FkIiBpZD0iYSIKICAgICAgICAgICAgICAgICAgICB4bGluazpzaG93PSJvdGhlciI+CiAgICAgICAgPHN0b3Agc3RvcC1vcGFjaXR5PSIuMSIgc3RvcC1jb2xvcj0iI2JiYiIgb2Zmc2V0PSIwIi8+CiAgICAgICAgPHN0b3Agc3RvcC1vcGFjaXR5PSIuMSIgb2Zmc2V0PSIxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgoKICAgIDxyZWN0IHJ4PSIzIiBmaWxsPSIjNTU1IiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjIwIiBjbGFzcz0ic1dpZHRoIi8+CiAgICA8cmVjdCByeD0iMyIgZmlsbD0iIzRjMSIgd2lkdGg9IjM5IiB4PSI4NiIgaGVpZ2h0PSIyMCIgY2xhc3M9InZXaWR0aCB0TW92ZSIvPgogICAgPHJlY3QgZmlsbD0iIzRjMSIgeD0iODYiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyMCIgY2xhc3M9InRNb3ZlIi8+CiAgICA8cmVjdCByeD0iMyIgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEyNSIgaGVpZ2h0PSIyMCIgY2xhc3M9InNXaWR0aCIvPgoKICAgIDxnIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJEZWphVnUgU2FucyxWZXJkYW5hLEdlbmV2YSxzYW5zLXNlcmlmIgogICAgICAgZmlsbD0iI2ZmZiI+CiAgICAgICAgPHRleHQgeD0iNiIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgeT0iMTUiPgogICAgICAgICAgICBweXBpIHBhY2thZ2UKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iNiIgaWQ9InRUZXh0IiB5PSIxNCI+CiAgICAgICAgICAgIHB5cGkgcGFja2FnZQogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiB4PSI5MSIgZmlsbC1vcGFjaXR5PSIuMyIgeT0iMTUiIGNsYXNzPSJ0TW92ZSI+CiAgICAgICAgICAgIDEuMC4yCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjkxIiBpZD0idlRleHQiIHk9IjE0IiBjbGFzcz0idE1vdmUiPgogICAgICAgICAgICAxLjAuMgogICAgICAgIDwvdGV4dD4KICAgIDwvZz4KPC9zdmc+" alt="PyPI version" /></a></p>
+<p><a href="https://badge.fury.io/py/dynamic-topic-modeling"><img src="data:image/svg+xml;base64,CjxzdmcgY29udGVudFNjcmlwdFR5cGU9InRleHQvZWNtYXNjcmlwdCIgd2lkdGg9IjEyNSIKICAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgem9vbUFuZFBhbj0ibWFnbmlmeSIKICAgICBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIKICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCI+CgoKICAgIDxsaW5lYXJHcmFkaWVudCB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeDI9IjAiIHkyPSIxMDAlIgogICAgICAgICAgICAgICAgICAgIHhsaW5rOnR5cGU9InNpbXBsZSIgeGxpbms6YWN0dWF0ZT0ib25Mb2FkIiBpZD0iYSIKICAgICAgICAgICAgICAgICAgICB4bGluazpzaG93PSJvdGhlciI+CiAgICAgICAgPHN0b3Agc3RvcC1vcGFjaXR5PSIuMSIgc3RvcC1jb2xvcj0iI2JiYiIgb2Zmc2V0PSIwIi8+CiAgICAgICAgPHN0b3Agc3RvcC1vcGFjaXR5PSIuMSIgb2Zmc2V0PSIxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgoKICAgIDxyZWN0IHJ4PSIzIiBmaWxsPSIjNTU1IiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjIwIiBjbGFzcz0ic1dpZHRoIi8+CiAgICA8cmVjdCByeD0iMyIgZmlsbD0iIzRjMSIgd2lkdGg9IjM5IiB4PSI4NiIgaGVpZ2h0PSIyMCIgY2xhc3M9InZXaWR0aCB0TW92ZSIvPgogICAgPHJlY3QgZmlsbD0iIzRjMSIgeD0iODYiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyMCIgY2xhc3M9InRNb3ZlIi8+CiAgICA8cmVjdCByeD0iMyIgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEyNSIgaGVpZ2h0PSIyMCIgY2xhc3M9InNXaWR0aCIvPgoKICAgIDxnIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJEZWphVnUgU2FucyxWZXJkYW5hLEdlbmV2YSxzYW5zLXNlcmlmIgogICAgICAgZmlsbD0iI2ZmZiI+CiAgICAgICAgPHRleHQgeD0iNiIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgeT0iMTUiPgogICAgICAgICAgICBweXBpIHBhY2thZ2UKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iNiIgaWQ9InRUZXh0IiB5PSIxNCI+CiAgICAgICAgICAgIHB5cGkgcGFja2FnZQogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiB4PSI5MSIgZmlsbC1vcGFjaXR5PSIuMyIgeT0iMTUiIGNsYXNzPSJ0TW92ZSI+CiAgICAgICAgICAgIDEuMC4yCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjkxIiBpZD0idlRleHQiIHk9IjE0IiBjbGFzcz0idE1vdmUiPgogICAgICAgICAgICAxLjAuMgogICAgICAgIDwvdGV4dD4KICAgIDwvZz4KPC9zdmc+" alt="PyPI version" /></a> <a href="https://zenodo.org/badge/latestdoi/238671296"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxdjIwSDB6IiAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IgogICAgICAgICAgICBkPSJNMzEgMGgxNTV2MjBIMzF6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE4NnYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNiIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiCiAgICAgICAgICAgIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgRE9JCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iMTYiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIERPSQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIKICAgICAgICAgICAgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMzY2MDQwMQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIgeT0iMTQiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMzY2MDQwMQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9zdmc+" alt="DOI" /></a></p>
 <!-- badges: end -->
 
-<p>The goal of ‘wei_lda_debate’ is to build Latent Dirichlet Allocation models based on ‘sklearn’ and ‘gensim’ framework, and Dynamic Topic Model(Blei and Lafferty 2006) based on ‘gensim’ framework. I decide to build a Python package, so this reposority will be updated. The new reposority path is <a href="https://github.com/JiaxiangBU/dynamic_topic_modeling.git">https://github.com/JiaxiangBU/dynamic_topic_modeling.git</a>.</p>
-<h1 id="examples">Examples</h1>
+<p>The goal of ‘wei_lda_debate’ is to build Latent Dirichlet Allocation models based on ‘sklearn’ and ‘gensim’ framework, and Dynamic Topic Model(Blei and Lafferty 2006) based on ‘gensim’ framework. I decide to build a Python package ‘dynamic_topic_modeling’, so this reposority will be updated and ‘wei_lda_debate’ is depreciated. The new reposority path is <a href="https://github.com/JiaxiangBU/dynamic_topic_modeling.git">https://github.com/JiaxiangBU/dynamic_topic_modeling.git</a>.</p>
+<p>To build this package, I borrow from</p>
+<ol>
+<li>‘wei_lda_debate’(Wang 2018) to build LDA framework</li>
+<li>‘dtmvisual’(Svitlana 2019) to build the visualization framework</li>
+</ol>
+<h2 id="examples">Examples</h2>
 <ol>
 <li><a href="https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb">LDA based on sklearn</a></li>
 <li><a href="https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb">LDA based on gensim</a></li>
 <li><a href="https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb">Dynamic Topic Modeling</a></li>
 </ol>
+<h2 id="citations">Citations</h2>
+<p>Jiaxiang Li. (2020, February 9). JiaxiangBU/dynamic_topic_modeling: dynamic_topic_modeling 1.1.0 (Version v1.1.0). Zenodo. <a href="http://doi.org/10.5281/zenodo.3660401">http://doi.org/10.5281/zenodo.3660401</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex"><code class="sourceCode bibtex"><a class="sourceLine" id="cb1-1" title="1"><span class="co">@software{jiaxiang_li_2020_3660401,</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co">  author       = {Jiaxiang Li},</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co">  title        = {{JiaxiangBU/dynamic\_topic\_modeling: </span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">                   dynamic\_topic\_modeling 1.1.0}},</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co">  month        = feb,</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co">  year         = 2020,</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co">  publisher    = {Zenodo},</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co">  version      = {v1.1.0},</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co">  doi          = {10.5281/zenodo.3660401},</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="co">  url          = {https://doi.org/10.5281/zenodo.3660401}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="co">}</span></a></code></pre></div>
+<p>If you use dynamic_topic_modeling, I would be very grateful if you can add a citation in your published work. By citing dynamic_topic_modeling, beyond acknowledging the work, you contribute to make it more visible and guarantee its growing and sustainability. For citation, please use the BibTex or the citation content.</p>
 <h4 align="center">
 
 <p><strong>Code of Conduct</strong></p>
@@ -640,6 +659,16 @@ body {
 <div id="ref-Blei2006Dynamic">
 
 <p>Blei, David M., and John D. Lafferty. 2006. “Dynamic Topic Models.” In <em>Machine Learning, Proceedings of the Twenty-Third International Conference (Icml 2006), Pittsburgh, Pennsylvania, Usa, June 25-29, 2006</em>.</p>
+</div>
+
+<div id="ref-Svitlana_2019">
+
+<p>Svitlana. 2019. “Dtmvisual: This Package Consists of Functionalities for Dynamic Topic Modelling and Its Visualization.” GitHub. 2019. <a href="https://github.com/GSukr/dtmvisual">https://github.com/GSukr/dtmvisual</a>.</p>
+</div>
+
+<div id="ref-Shuyi_Wang2018">
+
+<p>Wang, Shuyi. 2018. GitHub. 2018. <a href="https://github.com/wshuyi/wei_lda_debate">https://github.com/wshuyi/wei_lda_debate</a>.</p>
 </div>
 
 </div>

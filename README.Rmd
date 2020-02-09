@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![PyPI version](https://badge.fury.io/py/dynamic-topic-modeling.svg)](https://badge.fury.io/py/dynamic-topic-modeling)
+[![DOI](https://zenodo.org/badge/238671296.svg)](https://zenodo.org/badge/latestdoi/238671296)
 <!-- badges: end -->
 
 The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation models based on 'sklearn' and 'gensim' framework, and Dynamic Topic Model[@Blei2006Dynamic] based on 'gensim' framework.
@@ -30,7 +31,7 @@ To build this package, I borrow from
 1. 'wei_lda_debate'[@Shuyi_Wang2018] to build LDA framework
 1. 'dtmvisual'[@Svitlana_2019] to build the visualization framework
 
-# Examples
+## Examples
 
 1. [LDA based on sklearn]
 1. [LDA based on gensim]
@@ -39,5 +40,24 @@ To build this package, I borrow from
 [LDA based on sklearn]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb
 [LDA based on gensim]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb
 [Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb
+
+## Citations
+
+```{r include=FALSE}
+citations <- add2pkg::add_zenodo_citation("README.Rmd")
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Cite)
+```
+
+```{r echo=FALSE, results='asis'}
+cat(paste0("```BibTex\n",citations$BibTex,"\n```"))
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Comments)
+```
+
 
 `r add2pkg::add_disclaimer("Jiaxiang Li;Shuyi Wang;Svitlana Galeshchuk", license_name = "Apache License")`
