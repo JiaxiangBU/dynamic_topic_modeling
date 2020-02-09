@@ -1,0 +1,45 @@
+```{r}
+library(tidyverse)
+```
+
+```{r}
+word_df <- read_csv("../output/model_df.csv")
+topic_df <- read_csv("../output/topic_df.csv")
+```
+
+```{r}
+topic_label <-
+    word_df %>%
+    # distinct(topicId)
+    group_by(topicId, word) %>%
+    summarise(weight = median(weight)) %>%
+    group_by(topicId) %>%
+    arrange(desc(abs(weight))) %>%
+    mutate(row_number = row_number()) %>%
+    filter(row_number <= 4) %>%
+    summarise(text = str_flatten(word, ">"))
+```
+
+
+```{r}
+df <- topic_df %>%
+    # 也是求文档的均值
+    group_by(period, topicId) %>%
+    summarise(distribution = mean(distribution)) %>%
+    left_join(topic_label, by = "topicId") %>%
+    mutate(topicId = as.factor(topicId)) %>% 
+    ungroup()
+df %>% 
+    ggplot() +
+    aes(x = period, y = distribution, color = topicId) +
+    geom_line() +
+    geom_text(
+        data = function(x) df %>% filter(period == max(period)),
+        aes(label = text), nudge_x = 0.5
+    ) +
+    theme_classic() +
+    theme(legend.position = "None")
+ggsave("../figure/topic_evolution.png", height = 5, width = 20)
+knitr::include_graphics("../figure/topic_evolution.png")
+```
+
