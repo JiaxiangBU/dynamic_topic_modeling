@@ -37,10 +37,12 @@ Moreover, this package seems like a visualiztaion tutorial using jupyter noteboo
 1. [LDA based on sklearn]
 1. [LDA based on gensim]
 1. [Dynamic Topic Modeling]
+1. [Data Analysis on Demi Gods and Semi Devils using Dynamic Topic Modeling]
 
 [LDA based on sklearn]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb
 [LDA based on gensim]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb
 [Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb
+[Data Analysis on Demi Gods and Semi Devils using Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/demo.ipynb
 
 ## Citations
 
