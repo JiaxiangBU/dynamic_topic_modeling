@@ -1,0 +1,45 @@
+```{r}
+library(tidyverse)
+```
+
+```{r}
+txt <- read_lines("../../imp_rmd//166956.txt", locale = locale(encoding = "UTF-8"))
+# file.edit("../../imp_rmd/166956.txt")
+```
+
+```{r}
+txt %>% 
+    str_subset("章|节") %>% 
+    head()
+```
+
+```{r}
+df <- data.frame(text = txt)
+library(magrittr)
+df %<>% 
+    mutate(text = text %>% str_remove_all('[:punct:]') %>% str_remove_all("\\s"))
+df %<>% 
+    filter(str_length(text)>10)
+```
+
+```{r}
+df <-
+    df %>%
+    mutate(bin = str_detect(text, "第\\p{Han}{1,5}章")) %>% 
+    mutate(bin = cumsum(bin)) %>% 
+    group_by(bin) %>% 
+    filter(n() > 50)
+```
+
+```{r}
+df %>% 
+    select(text, bin) %>% 
+    write_excel_csv("../../imp_rmd/天龙八部.csv")
+```
+
+```{r}
+df %>% count(bin) %>% 
+    ungroup() %>% 
+    summarise(min(n))
+```
+

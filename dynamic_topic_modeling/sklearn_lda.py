@@ -10,11 +10,11 @@ import pandas as pd
 import jieba
 
 # Cell
-def make_df(csv_name):
+def make_df(csv_name, column = 'Content', output_column = 'text'):
     '''Use jieba, create data frame.'''
     df = pd.read_csv(csv_name)
-    df = df.dropna(subset=['Content'])
-    df['text'] = df.Content.apply(lambda x: " ".join(jieba.cut(x)))
+    df = df.dropna(subset=[column])
+    df[output_column] = df[column].apply(lambda x: " ".join(jieba.cut(x)))
     return df
 
 # Cell

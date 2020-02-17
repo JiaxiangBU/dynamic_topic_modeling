@@ -2,7 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"display_topic": "dtm.ipynb",
+index = {"build_docs": "dtm.ipynb",
+         "build_dict": "dtm.ipynb",
+         "display_topic": "dtm.ipynb",
          "document_influence_dim": "dtm.ipynb",
          "topic_distribution": "dtm.ipynb",
          "visualize_topics": "dtm.ipynb",
