@@ -21,46 +21,38 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/238671296.svg)](https://zenodo.org/badge/latestdoi/238671296)
 <!-- badges: end -->
 
-The goal of 'wei_lda_debate' is to build Latent Dirichlet Allocation models based on 'sklearn' and 'gensim' framework, and Dynamic Topic Model[@Blei2006Dynamic] based on 'gensim' framework.
-I decide to build a Python package 'dynamic_topic_modeling', so this reposority will be updated and 'wei_lda_debate' is depreciated.
-The new reposority path is <https://github.com/JiaxiangBU/dynamic_topic_modeling.git>.
+Dynamic Topic Modeling (DTM)[@Blei2006Dynamic] is an advanced machine learning technique for uncovering the latent topics in a corpus of documents over time. The goal of this project is to provide an easy-to-use Python package for running DTM. This package is built on the frameworks of [sklearn](https://github.com/wshuyi/wei_lda_debate) and [gensim](https://github.com/GSukr/dtmvisual)[@Shuyi_Wang2018;@Svitlana_2019] for Dynamic Topic Modeling.
 
+To get started, follow the tutorials on our [Jupyter notebooks](https://nbviewer.jupyter.org/github/JiaxiangBU/dynamic_topic_modeling/tree/master/):
 
-To build this package, I borrow from 
+1. [LDA based on sklearn](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb)
+2. [LDA based on gensim](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb)
+3. [Dynamic Topic Modeling](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb)
+4. [Data Analysis on Demi Gods and Semi Devils using Dynamic Topic Modeling](https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/demo.ipynb)
 
-1. 'wei_lda_debate'[@Shuyi_Wang2018] to build LDA framework
-1. 'dtmvisual'[@Svitlana_2019] to build the visualization framework.
-Moreover, this package seems like a visualiztaion tutorial using jupyter notebook for 'dtmvisual'.
+## Install
 
-## Examples
-
-1. [LDA based on sklearn]
-1. [LDA based on gensim]
-1. [Dynamic Topic Modeling]
-1. [Data Analysis on Demi Gods and Semi Devils using Dynamic Topic Modeling]
-
-[LDA based on sklearn]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/sklearn-lda.ipynb
-[LDA based on gensim]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/gensim-lda.ipynb
-[Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/dtm.ipynb
-[Data Analysis on Demi Gods and Semi Devils using Dynamic Topic Modeling]: https://nbviewer.jupyter.org/urls/jiaxiangbu.github.io/dynamic_topic_modeling/demo.ipynb
+`pip install dynamic_topic_modeling`
 
 ## Citations
 
-```{r include=FALSE}
-citations <- add2pkg::add_zenodo_citation("README.Rmd")
-```
 
-```{r echo=FALSE, results='asis'}
-cat(citations$Cite)
-```
+If you use dynamic_topic_modeling, please cite:
 
-```{r echo=FALSE, results='asis'}
-cat(paste0("```BibTex\n",citations$BibTex,"\n```"))
-```
+Jiaxiang Li. (2020, February 9). JiaxiangBU/dynamic_topic_modeling: dynamic_topic_modeling 1.1.0 (Version v1.1.0). Zenodo. http://doi.org/10.5281/zenodo.3660401
 
-```{r echo=FALSE, results='asis'}
-cat(citations$Comments)
 ```
-
+@software{jiaxiang_li_2020_3660401,
+  author       = {Jiaxiang Li},
+  title        = {{JiaxiangBU/dynamic_topic_modeling: 
+                   dynamic_topic_modeling 1.1.0}},
+  month        = feb,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v1.1.0},
+  doi          = {10.5281/zenodo.3660401},
+  url          = {https://doi.org/10.5281/zenodo.3660401}
+}
+```
 
 `r add2pkg::add_disclaimer("Jiaxiang Li;Shuyi Wang;Svitlana Galeshchuk", license_name = "Apache License")`
